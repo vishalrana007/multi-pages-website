@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CII-MCM Multi Skill Training Institute Khaniyara</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+Devanagari:wght@300&family=Patrick+Hand&family=Philosopher&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/042d05c8ea.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    #footer {
+        margin-top: 150px;
+
+    }
+
+    header {
+        background-color: rgb(21, 21, 100);
+        color: #fff;
+        text-align: center;
+        padding: 80px 0;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        color: WHITE;
+    }
+
+    .course-description {
+        padding: 50px 0;
+    }
+
+
+
+    .course-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .course-image {
+        flex: 0 0 40%;
+
+    }
+
+    .course-image img {
+        width: 80%;
+        border-radius: 25px;
+        transition: transform 0.3s ease;
+        margin-left: 65px;
+        margin-top: 100px;
+    }
+
+    .course-image img:hover {
+        transform: scale(1.1);
+    }
+
+    .course-details {
+        flex: 0 0 50%;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        color: #1a1a1a;
+    }
+
+    p {
+        line-height: 1.6;
+        color: #666;
+    }
+
+    ul {
+        color: #333;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: rgb(21, 21, 100);
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #fdc93b;
+        color: white;
+    }
+
+
+
+    @media (max-width:825px) {
+        header {
+            background-color: rgb(21, 21, 100);
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+            height: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.2em;
+            color: WHITE;
+        }
+
+        .course-image img {
+            width: 80%;
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #1a1a1a;
+        }
+
+        .course-details {
+            flex: 0 0 50%;
+            margin-left: 20px;
+        }
+
+        .container {
+            margin-top: 300px;
+        }
+
+
+    }
+
+    @media (max-width:425px) {
+        header {
+            background-color: rgb(21, 21, 100);
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+            height: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: .9em;
+            color: WHITE;
+        }
+
+        .course-image img {
+
+            border-radius: 25px;
+            height: 200px;
+            transition: transform 0.3s ease;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #1a1a1a;
+            margin-left: 25px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+            margin-left: 25px;
+        }
+
+        ul li {
+            margin-left: -120px;
+            margin-top: 20px;
+        }
+
+        .container {
+
+
+            display: none;
+
+
+        }
+
+        #hide {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div id="main">
+
+        <nav>
+
+            <img src="logo-mcm.png" class="logo">
+            <ul>
+                <i class="fa-solid fa-circle-xmark" id="menu-close"></i>
+                <li class="ani_1"><a  href="index.html">Home</a><div class="trns1"></div></li>
+   
+
+                <li class="ani_2"><a href="about.html">About</a> <div class="trns2"></div></li>
+                <li class="ani_3"><a href="gallery.html">Gallery</a><div class="trns3"></div></li>
+                <li class="ani_4"><a class="active" href="course.html">Course</a><div class="trns4"></div></li>
+                <li class="ani_5"><a href="contact.html">Contact</a><div class="trns5"></div></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
+
+        </nav>
+
+        <header>
+            <h1>Empower your future with sparks of knowledge</h1>
+            <p>Empower Your Career in Beauty and Wellness Course</p>
+        </header>
+
+        <section class="course-description">
+            <div class="course-info">
+                <div class="course-image">
+                    <img src="beauty.jpg" alt="beauty Course Image">
+                </div>
+                <div class="course-details">
+                    <h2>BEAUTY & WELLNESS COURSE</h2>
+                    <p>Beauty is not just about a pretty face. It's about having a pretty mind, a pretty heart, and a pretty soul
+                    </p>
+                    <p>Throughout this program, you'll delve into various facets of  Beauty and Wellness Course
+                        including:</p>
+                    <ul>
+                      
+                       
+                        <li>BEAUTY AND WELLNESS (3 MONTH BASIC CERTIFICATION FROM CII)</li>
+                        <li>BEAUTY AND WELLNESS (1 YEAR DIPLOMA IN COSMETOLOGY FROM CII)</li>
+                        <li>BRIDAL MAKEUP ARTIST PORTFOLIO-NIED-HPKVN</li>
+                        <li>SPA THERAPIST-NIED-SSC</li>
+                        <li>ASSISTANT SPA THERAPIST- NIED-HPKVN</li>
+                       
+
+                    </ul>
+                    <p id="hide">Our expert instructors bring years of industry experience to the table, ensuring that
+                        you
+                        receive practical insights and real-world examples that reinforce your learning.
+                        Additionally, hands-on projects and interactive exercises will allow you to apply your
+                        knowledge in Beauty & Wellness Course </p>
+                    <p id="hide">By the end of the course, you'll emerge with a comprehensive understanding of Beauty 
+                        fundamentals, along with the confidence and skills to tackle complex challenges in the Beauty & Wellness Fields.</p>
+                    <a href="#enroll" class="btn">Enroll Now</a>
+                </div>
+            </div>
+
+    </div>
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <img src="logo-mcm.png" class="logo">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>About US</h5>
+                    <p>Rooted with the core purpose of women empowerment, MCM Charitable Trust strives to tap into
+                        the talents of poor, marginalised women as a means of making them economically independent
+                        and skilled.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Information</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href=""><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href=""><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href=""><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Contact</h5>
+                    <p>VPO Khaniara, Dharamshala,
+                        District Kangra,
+                        Himachal Pradesh - 176218</p>
+
+                    <p>Phone : +91 - 858 072 6048</p>
+                    <p> Email : info@mehrchandmahajan.org</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/people/CII-Justice-Mehr-Chand-Mahajan-Trust-Multi-Skill-Training-Institute/100069856046135/"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/company/cii-justice-mehr-chand-mahajan-trust-multi-skill-training-institute/"><i class="fa fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="twitter.com/CII_MCMTrust"><i class="fa fa-x"></i></a></li>
+              <li class="list-inline-item"><a href="instagram.com/ciimcm"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.youtube.com/@justicemehrchandmahajan2765"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                </hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><u><a href="https://www.nationaltransaction.com/">© Copyright www.mehrchandmahajan.org All
+                                Rights Reserved.
+                    </p>
+
+                </div>
+                </hr>
+            </div>
+        </div>
+    </section>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
